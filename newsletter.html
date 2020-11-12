@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <header>
+        <a href='index.html' class="logo">Urban Games</a>
+        <nav>
+            <a href="projects.html">Projects</a>
+            <a href="newsletter.html">Newsletter</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <h4>Subscribe to Newsletter</h4>
+    <form action="/Exercise02_GamePage/confirmation-page.html">
+       <ul class="flex-outer">
+           <li>
+            <label for="first-name">First name*</label><br>
+            <input type="text" id="first-name" required>
+           </li>
+           <li>
+            <label for="last-name">Last name*</label><br>
+            <input type="text" id="last-name" required>
+           </li>
+           <li>
+            <label for="email">e-mail*</label><br>
+            <input type="email" id="email" name="email">
+           </li>
+           <li>
+            <p>How did you hear about us?</p>
+            <ul class="flex-inner">
+                <li>
+                    <input type="radio" id="game-event" name="hear-about" value="game-event">
+                    <label for="game-event">game event</label>
+                </li>
+                <li>
+                    <input type="radio" id="friends" name="hear-about" value="friends">
+                    <label>friends</label>
+                </li>
+                <li>
+                    <input type="radio" id="other" name="hear-about" value="other">
+                   <input type="text" id="other-text" name="hear-about" placeholder="other">
+                </li>
+             </ul>
+           </li>
+           <li>
+                    <label for="language-of-newsletter">Language of newsletter</label><br>
+                    <select name="language-of-newsletter" id="language-of-newsletter">
+                        <option value="english">English</option>
+                        <option value="german">German</option>
+                    </select>
+                </li>
+           <li>
+               <label for="comment">Comment</label><br>
+               <textarea id="comment" name="comment" rows="4" cols="50" placeholder="write here">
+                
+               </textarea>
+               <!-- <input type="text" id="comment" name="comment" placeholder="write here"> -->
+           </li>
+           <li>
+                <input type="checkbox" id="agree" name="agree" required>
+                <label for="agree"> I agree to receive a newsletter. </label>
+           </li>
+           <li>
+               <input type="submit" value="Subscribe to Newsletter">
+           </li>
+
+
+
+
+           
+           
+       </ul>
+    </form>
+
+
+    </body>
+</html>
